@@ -27,9 +27,9 @@ const Home = () => {
             {/* Hero Banner */}
             <section className="relative flex flex-col items-center justify-center h-[540px] md:h-[630px] lg:h-[720px] w-full overflow-hidden px-10 pt-[120px]" style={{background: 'linear-gradient(135deg, #003c6b 60%, #006aad 100%)'}}>
                 <div className="absolute inset-0 opacity-10 bg-no-repeat bg-center" style={{backgroundImage: `url(${require('../images/Home Page/Banner.png')})`}}></div>
-                <div className="relative z-10 flex flex-col items-start justify-center w-full max-w-2xl" style={{marginLeft: 0, paddingLeft: 0}}>
-                    {/* Make heading plain (no glow/formatting) and absolutely positioned at left with 10% padding */}
-                    <h1 className="absolute left-0" style={{paddingLeft: '10%', margin: 0, fontSize: '3rem', fontWeight: 800, color: '#fac500', textTransform: 'none'}}>
+                <div className="relative z-10 flex flex-col items-start justify-center w-full max-w-2xl" style={{marginLeft: 0, paddingLeft: '10%'}}>
+                    {/* Restore original styled heading (glow/formatting) but orient left with 10% padding */}
+                    <h1 className="text-[3rem] md:text-[4.8rem] lg:text-[6rem] font-barlow-condensed font-extrabold tracking-tight text-[#fac500] slug-glow-minimal text-left" style={{marginLeft: 0}}>
                         Slug Gaming
                     </h1>
                     <p className="mt-1 text-xl md:text-2xl font-inter text-[#fac500] text-left" style={{marginLeft: '8%'}}>
