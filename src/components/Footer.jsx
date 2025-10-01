@@ -11,8 +11,8 @@ const Footer = () => {
                     <Link to={'/'} class="flex items-center">
                         <img src={require('../images/Footer Component/SlugLogo.png')} alt="Slug Gaming Logo" class="w-32 h-30 mr-2"></img>
                         <div class="text-white">
-                            <p class="text-2xl font-bold ">Slug Gaming</p>
-                            <p class="text-lg ">UC Santa Cruz</p>
+                            <p class="text-2xl" style={{fontWeight: 'normal', textTransform: 'none'}}>Slug Gaming</p>
+                            <p class="text-lg">UC Santa Cruz</p>
                             <p class="text-sm">EST. 2014</p>
                         </div>
                     </Link>
