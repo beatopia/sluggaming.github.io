@@ -25,23 +25,32 @@ const Home = () => {
     return (
         <div className="bg-[#003c6b] min-h-screen text-white font-sans">
             {/* Hero Banner */}
-            <section className="relative flex flex-col items-center justify-center h-[540px] md:h-[630px] lg:h-[720px] w-full overflow-hidden px-10 pt-[120px]" style={{background: 'linear-gradient(135deg, #003c6b 60%, #006aad 100%)'}}>
+            <section className="relative flex items-center justify-center h-[540px] md:h-[630px] lg:h-[720px] w-full overflow-hidden px-4 md:px-10 pt-[120px]" style={{background: 'linear-gradient(135deg, #003c6b 60%, #006aad 100%)'}}>
                 <div className="absolute inset-0 opacity-10 bg-no-repeat bg-center" style={{backgroundImage: `url(${require('../images/Home Page/Banner.png')})`}}></div>
-                <div className="relative z-10 flex flex-col items-start justify-center w-full max-w-2xl" style={{marginLeft: 0, paddingLeft: '10%'}}>
-                    {/* Restore original styled heading (glow/formatting) but orient left with 10% padding */}
-                    <h1 className="text-[3rem] md:text-[4.8rem] lg:text-[6rem] font-barlow-condensed font-extrabold tracking-tight text-[#fac500] slug-glow-minimal text-left" style={{marginLeft: 0}}>
-                        Slug Gaming
-                    </h1>
-                    <p className="mt-1 text-xl md:text-2xl font-inter text-[#fac500] text-left" style={{marginLeft: '8%'}}>
-                        UC Santa Cruz's official gaming community.
-                    </p>
-                    <div className="mt-8 flex gap-4 justify-start" style={{marginLeft: '8%'}}>
-                        <a href="https://discord.gg/slug-gaming" target="_blank" rel="noopener noreferrer" className="px-8 py-4 min-w-[180px] rounded-full font-barlow-condensed text-xl font-bold btn-discord shadow-lg transition-all duration-200 focus:outline-none focus:ring-4 focus:ring-[#12a5dc]">
-                            Join Our Discord
-                        </a>
-                        <Link to="/teams" className="px-8 py-4 min-w-[180px] rounded-full font-barlow-condensed text-xl font-bold btn-teams shadow-lg transition-all duration-200 focus:outline-none focus:ring-4 focus:ring-[#12a5dc]">
-                            See Our Teams
-                        </Link>
+                <div className="relative z-10 w-full max-w-6xl px-4">
+                    <div className="flex flex-col md:flex-row items-center md:items-stretch">
+                        {/* Left column: content */}
+                        <div className="w-full md:w-1/2 flex flex-col items-start justify-center" style={{paddingLeft: '10%'}}>
+                            <h1 className="whitespace-nowrap text-[3rem] md:text-[4.8rem] lg:text-[6rem] font-barlow-condensed font-extrabold tracking-tight text-[#fac500] slug-glow-minimal text-left" style={{marginLeft: 0}}>
+                                Slug Gaming
+                            </h1>
+                            <p className="mt-2 text-xl md:text-2xl font-inter text-[#fac500] text-left">
+                                UC Santa Cruz's official gaming community.
+                            </p>
+                            <div className="mt-8 flex gap-4 justify-start">
+                                <a href="https://discord.gg/slug-gaming" target="_blank" rel="noopener noreferrer" className="px-8 py-4 min-w-[180px] rounded-full font-barlow-condensed text-xl font-bold btn-discord shadow-lg transition-all duration-200 focus:outline-none focus:ring-4 focus:ring-[#12a5dc]">
+                                    Join Our Discord
+                                </a>
+                                <Link to="/teams" className="px-8 py-4 min-w-[180px] rounded-full font-barlow-condensed text-xl font-bold btn-teams shadow-lg transition-all duration-200 focus:outline-none focus:ring-4 focus:ring-[#12a5dc]">
+                                    See Our Teams
+                                </Link>
+                            </div>
+                        </div>
+                        {/* Right column: reserved for a graphic (placeholder) */}
+                        <div className="hidden md:flex w-1/2 items-center justify-center">
+                            {/* Replace the placeholder below with the actual graphic/image component */}
+                            <div className="w-80 h-80 bg-[#012a4a] rounded-md flex items-center justify-center text-[#12a5dc]">Graphic</div>
+                        </div>
                     </div>
                 </div>
                 {/* Slug bounce scroll-down indicator attached to viewport */}
